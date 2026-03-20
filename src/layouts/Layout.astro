@@ -1,0 +1,33 @@
+---
+import "../assets/styles.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "UserAny — Open-source tools for AI agents",
+  description = "Open-source tools that AI agents and humans can both use.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://useany.sh" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-slate-900 text-slate-200 antialiased">
+    <div class="mx-auto max-w-3xl px-6 py-12">
+      <slot />
+    </div>
+  </body>
+</html>
