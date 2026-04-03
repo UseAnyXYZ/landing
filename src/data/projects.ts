@@ -16,7 +16,7 @@ export const projects: Project[] = [
     license: "MIT",
     language: "TypeScript",
     links: [
-      { label: "Web App", url: "https://usecalendar.xyz" },
+      { label: "Web App", url: "https://calendar.useany.sh" },
       { label: "GitHub", url: "https://github.com/UseAnyXYZ/use-calendar" },
     ],
   },
