@@ -2,29 +2,24 @@
 const year = new Date().getFullYear();
 ---
 
-<footer class="mt-20 border-t border-slate-800 pt-8 text-sm text-slate-500">
-  <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-    <p>
-      Maintained by
-      <a
-        href="https://github.com/jzhangdev"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-slate-400 hover:text-white transition-colors"
-      >
-        jzhangdev
-      </a>
-    </p>
-    <div class="flex gap-4">
-      <a
-        href="https://github.com/UseAnyXYZ"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-slate-400 hover:text-white transition-colors"
-      >
-        GitHub
-      </a>
+<footer class="relative">
+  <div class="mx-auto max-w-[1440px] px-6 md:px-10">
+    <div class="rule"></div>
+
+    <div
+      class="mono flex flex-col items-start justify-between gap-3 py-6 text-[11px] uppercase tracking-[0.22em] text-[color:var(--color-ink-soft)] sm:flex-row sm:items-center"
+    >
+      <span>© {year} UseAny — All tools free as in freedom.</span>
+      <div class="flex items-center gap-5">
+        <a
+          class="underline-hover"
+          href="https://github.com/UseAnyXYZ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+      </div>
     </div>
   </div>
-  <p class="mt-4">&copy; {year} UserAny</p>
 </footer>
