@@ -1,0 +1,33 @@
+---
+const phrases = [
+  "open source",
+  "agent-native",
+  "human-legible",
+  "terminal first",
+  "cloud optional",
+  "protocols over platforms",
+  "small sharp tools",
+  "plain text wins",
+  "cron for agents",
+  "permissionless interfaces",
+];
+const doubled = [...phrases, ...phrases];
+---
+
+<section
+  class="ticker relative border-y border-[color:var(--color-rule)] bg-[color:var(--color-ink)] text-[color:var(--color-paper)]"
+>
+  <div class="ticker-track py-4">
+    {doubled.map((phrase, index) => (
+      <div class="flex shrink-0 items-center gap-8 px-8">
+        <span class="mono text-[13px] uppercase tracking-[0.24em]">{phrase}</span>
+        <span
+          class="inline-block h-1.5 w-1.5 rotate-45"
+          style={index % 4 === 3
+            ? "background: var(--color-vermilion)"
+            : "background: var(--color-paper)"}
+        ></span>
+      </div>
+    ))}
+  </div>
+</section>
